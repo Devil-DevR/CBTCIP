@@ -74,6 +74,7 @@ bool checkWin(char board[3][3], char player)
 
 
 int main() {
+    cout<<endl<<endl;
     char arr[3][3];
     initializeBoard(arr);
     displayBoard(arr);

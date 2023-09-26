@@ -3,6 +3,8 @@
 #include <vector>
 #include <iomanip>
 #include <fstream>
+#include <limits>
+
 
 using namespace std;
 
@@ -24,12 +26,12 @@ int getIntInput(const string &prompt)
         cout << prompt;
         if (cin >> value)
         {
-            // Input is an integer, break out of the loop
+            
             break;
         }
         else
         {
-            // Input is not an integer, clear the input buffer and try again
+           
             cout << "Invalid input. Please enter an integer." << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -45,12 +47,12 @@ float getFloatInput(const string &prompt)
         cout << prompt;
         if (cin >> value)
         {
-            // Input is a float, break out of the loop
+            
             break;
         }
         else
         {
-            // Input is not a float, clear the input buffer and try again
+           
             cout << "Invalid input. Please enter a floating-point number." << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
